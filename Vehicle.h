@@ -4,6 +4,7 @@
 
 #include <string>
 #include <unordered_map>
+using namespace std;
 
 enum Color {
 	Red, Blue, White, Silver, Black
@@ -12,20 +13,20 @@ enum Color {
 class Vehicle {
 private:
 	int price;
-	std::string model;
-	std::string make;
+	string model;
+	string make;
 	int year;
-	std::string VIN;
+	string VIN;
 	Color color;
 	int lotTime;
 
 public:
 	//Getters (inline)
 	int getPrice() { return price; }
-	std::string getModel() { return model; }
-	std::string getMake() { return make; }
+	string getModel() { return model; }
+	string getMake() { return make; }
 	int getYear() { return year; }
-	std::string getVIN() { return VIN; }
+	string getVIN() { return VIN; }
 	Color getColor() { return color; }
 	int getTime() { return lotTime; }
 
